@@ -16,9 +16,7 @@
   in rec {
     devShell.${system} = pkgs.mkShell {
       buildInputs = [
-        pkgs.hello
         goboscript.packages.${system}.goboscript
-
       ];
     };
   };
