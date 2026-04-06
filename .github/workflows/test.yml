@@ -30,3 +30,9 @@ jobs:
       run: |
         hello
         say-bye
+    - name: Run command in flake shell
+      shell: bash -c "nix develop --impure -c bash -- {0}"
+      run: | 
+        devenv test
+        goboscript
+
