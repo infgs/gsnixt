@@ -9,4 +9,6 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-    - run: echo hello world
+    - run: |
+        bash <(curl -L https://nixos.org/nix/install)
+        nix-env -iA devenv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable
