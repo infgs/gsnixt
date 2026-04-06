@@ -1,3 +1,4 @@
+# https://nix.dev/guides/recipes/continuous-integration-github-actions.html
 name: test goboscript nix flake
 
 on:
