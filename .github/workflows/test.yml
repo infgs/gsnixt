@@ -24,4 +24,5 @@ jobs:
       shell: bash -c "nix develop --impure -c bash -- {0}"
       run: | 
         goboscript help
-
+        echo '---------------------------'
+        goboscript --version
